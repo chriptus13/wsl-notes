@@ -2,7 +2,7 @@
 
 1. Install [VcXsrv](https://sourceforge.net/projects/vcxsrv) Windows X Server
 1. Run VcXsrv and disable access control (extra setting)
-1. Set `DISPLAY` environment variable on WSL:
+1. ~~Set `DISPLAY` environment variable on WSL:~~ (**UPDATE**: this step is not needed as per [this](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps))
 
 ```bash
 export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
